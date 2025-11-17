@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekap Perjalanan Dinas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rekap Perjalanan Dinas</h1>
+        <form>
+            <label for="nama_pelaksana">Nama Pelaksana Perjalanan Dinas:</label>
+            <input type="text" id="nama_pelaksana" name="nama_pelaksana" required>
+
+            <label for="lokasi_tujuan">Lokasi Tujuan:</label>
+            <input type="text" id="lokasi_tujuan" name="lokasi_tujuan" required>
+
+            <label for="tanggal_mulai">Tanggal Mulai:</label>
+            <input type="date" id="tanggal_mulai" name="tanggal_mulai" required>
+
+            <label for="tanggal_selesai">Tanggal Selesai:</label>
+            <input type="date" id="tanggal_selesai" name="tanggal_selesai" required>
+
+            <label for="keperluan">Keperluan Perjalanan:</label>
+            <textarea id="keperluan" name="keperluan" required></textarea>
+
+            <label for="jenis_kendaraan">Jenis Kendaraan:</label>
+            <select id="jenis_kendaraan" name="jenis_kendaraan">
+                <option value="pribadi">Kendaraan Pribadi</option>
+                <option value="dinas">Kendaraan Dinas</option>
+                <option value="pesawat">Kendaraan Umum (Pesawat)</option>
+                <option value="kereta">Kendaraan Umum (Kereta)</option>
+                <option value="bus_travel">Kendaraan Umum (Bus/Travel)</option>
+                <option value="kapal_laut">Kendaraan Umum (Kapal Laut)</option>
+            </select>
+
+            <div id="kendaraan_umum_details">
+                <label for="nomor_tiket">Nomor Tiket:</label>
+                <input type="text" id="nomor_tiket" name="nomor_tiket">
+
+                <label for="nomor_kursi">Nomor Kursi:</label>
+                <input type="text" id="nomor_kursi" name="nomor_kursi">
+            </div>
+
+            <h2>Rincian Biaya</h2>
+            <label for="biaya_bbm">Biaya BBM:</label>
+            <input type="number" id="biaya_bbm" name="biaya_bbm" min="0">
+
+            <label for="biaya_tol">Biaya Tol:</label>
+            <input type="number" id="biaya_tol" name="biaya_tol" min="0">
+
+            <label for="biaya_penginapan">Biaya Penginapan:</label>
+            <input type="number" id="biaya_penginapan" name="biaya_penginapan" min="0">
+
+            <label for="uang_makan">Uang Makan/Uang Harian:</label>
+            <input type="number" id="uang_makan" name="uang_makan" min="0">
+
+            <label for="transport_lokal">Transport Lokal:</label>
+            <input type="number" id="transport_lokal" name="transport_lokal" min="0">
+
+            <label for="nomor_surat_tugas">Nomor Surat Tugas:</label>
+            <input type="text" id="nomor_surat_tugas" name="nomor_surat_tugas">
+
+            <label for="nomor_nota_dinas">Nomor Nota Dinas:</label>
+            <input type="text" id="nomor_nota_dinas" name="nomor_nota_dinas">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
